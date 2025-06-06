@@ -1,0 +1,125 @@
+.display-flex {
+  display: flex;
+  align-items: center; /* عشان العناصر تتوسط عمودياً */
+  gap: 8px; /* مسافة بين العناصر */
+}
+
+/* ممكن تضيف شوية ستايل للعنوان */
+.display-flex h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* ستايل للآيكون لو حابب */
+.display-flex svg {
+  width: 24px;
+  height: 24px;
+  color: #555; /* لون رمادي مثلا */
+}
+
+.justify{
+    justify-content: center;
+}
+.color{
+    background-color: #CC4EC5;
+    color: white;
+    width: 100px;
+}
+.colorr {
+    color: white;
+}
+.back{
+    background-color: #581D87;
+}
+.text {
+  color: white;
+  display: flex;           
+  justify-content: center; /* توسيط أفقي */
+  align-items: center;     /* توسيط عمودي */
+  width: 100%;
+  height: 60px;            /* ارتفاع مناسب لتوسيط عمودي */
+
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* يخلي المحتوى يتوسّط أفقيًا */
+  margin-top: 50px; /* مسافة من فوق */
+}
+
+.color_search {
+  background-color: #603791;
+  width: 50%;
+  margin-top: 20px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  color: white;
+  border: none;
+  padding: 5px;
+}
+
+.not {
+  background-color: #DE4AAB;
+  width: 50%;
+  margin-top: 20px;
+  border: none;
+  height: 35px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.note-form {
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: right;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.note-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #603791;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.input1,
+.input2 {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.save-btn {
+  padding: 10px;
+  background-color: #603791;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.save-btn:hover {
+  background-color: #4b2e74;
+}
