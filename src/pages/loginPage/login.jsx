@@ -5,6 +5,7 @@ import ErrorDiv from "../../component/errorDiv";
 import { signUpContext } from "../../context/setToken";
 // --------------REACT IMPORTS------------------------------
 import { useContext, useEffect, useState } from "react"
+import { Link } from "react-router-dom";
 // --------------IMPORT PACKAGES----------------------------
 import axios from 'axios';
 // -------------MATERIAL UI IMPORTS-------------------------
@@ -91,7 +92,7 @@ const LoginComponent = () => {
 
                 {
                     failLogin != '' &&
-                    <div className={loginCss.errorContainer}>
+                    <div className={loginCss.middleContainer}>
                         <ErrorDiv errorContent={failLogin} />
                     </div>
                 }
@@ -138,13 +139,19 @@ const LoginComponent = () => {
 
                     </FormControl>
 
-                    <Button type="submit" variant="outlined" size="large" sx={{ width: "40%", ml: "auto", mr: "auto", mt: 5, mb: 5 }}>
+                    <Button type="submit" variant="outlined" size="large" sx={{ width: "50%", ml: "auto", mr: "auto", mt: 5, mb: 5 }}>
                         {
                             loginLouder ?
                                 <CircularProgress size="3rem" />
                                 : "LOGIN"
                         }
                     </Button>
+
+                    <div className={loginCss.middleContainer}>
+                        <span>Crete new account?</span>
+                        <Link to="/register" className={loginCss.linkCounter}> Register</Link>
+                    </div>
+
 
                 </form>
             </div>
