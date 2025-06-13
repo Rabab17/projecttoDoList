@@ -1,6 +1,7 @@
 import loginCss from "../loginPage/login.module.css"
+import registerCss from "./register.module.css"
 import { useForm } from "react-hook-form"
-import WelcomeText from "../../component/welconTextFolder/welcomeText";
+import WelcomeText from "../../component/welcomeText";
 import ErrorDiv from "../../component/errorDiv";
 import { signUpContext } from "../../context/setToken";
 // --------------REACT IMPORTS------------------------------
@@ -81,8 +82,8 @@ const RegisterComponent = () => {
     return (
         <>
             <div className={loginCss.containerDiv}>
-                <div >
-                    <WelcomeText text="REGISTER" textLetterNumber={24} />
+                <div className={registerCss.containerOfText}>
+                    <WelcomeText className={registerCss.text} text="REGISTER" />
                 </div>
 
                 {
