@@ -3,16 +3,23 @@ import { useState } from 'react'
 
 import './App.css'
 import Header from './component/header'
+import LoginComponent from './pages/loginPage/login'
+import RegisterComponent from './pages/registerPage/register'
+import SignUpProvider from './context/setToken'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-<div className='back'>
+      <div className='back'>
 
-  <Header></Header>
-</div>
+        {/* <Header></Header> */}
+        {/* <LoginComponent></LoginComponent> */}
+        <SignUpProvider>
+
+          <LoginComponent></LoginComponent>
+
+        </SignUpProvider>
+      </div>
     </>
   )
 }
